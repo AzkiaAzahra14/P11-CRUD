@@ -57,7 +57,10 @@
         </div>
       </nav>
       <!--penutup navbar-->
-
+      {% if pesan %}
+      <div class="alert alert-success">{{ pesan }}</div>
+    {% endif %}
+      <form action="/pascasarjana/" method="post">
       <h2>Data Dosen Pascasarjana</h2>
     <table class="table table-striped">
       <tr>

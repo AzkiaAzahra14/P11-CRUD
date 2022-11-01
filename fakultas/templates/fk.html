@@ -57,7 +57,10 @@
         </div>
       </nav>
       <!--penutup navbar-->
-
+      {% if pesan %}
+      <div class="alert alert-success">{{ pesan }}</div>
+    {% endif %}
+      <form action="/fk/" method="post">
       <h2>Data Dosen FK</h2>
     <table class="table table-striped">
       <tr>

@@ -58,6 +58,10 @@
       </nav>
       <!--penutup navbar-->
 
+    {% if pesan %}
+      <div class="alert alert-success">{{ pesan }}</div>
+    {% endif %}
+      <form action="/faperta/" method="post">
       <h2>Data Dosen Faperta</h2>
     <table class="table table-striped">
       <tr>

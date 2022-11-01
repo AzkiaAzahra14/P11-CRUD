@@ -42,6 +42,16 @@ def faperta(request):
         'dataMataKuliah': matakuliah,
         'dataProdi': prodi,  
     }
+    if request.POST:
+        form = FormFaperta(request.POST)
+        if form ,is_valid():
+            form.save()
+            form = FormFaperta()
+
+            konteks = {
+                'form': form,
+            }
+            return render(request, 'faperta.html', konteks)
     return HttpResponse(template.render())
 
 def feb(request):
@@ -68,6 +78,16 @@ def feb(request):
         'dataMataKuliah': matakuliah,
         'dataProdi': prodi,  
     }
+    if request.POST:
+        form = FormFeb(request.POST)
+        if form ,is_valid():
+            form.save()
+            form = FormFeb()
+
+            konteks = {
+                'form': form,
+            }
+            return render(request, 'feb.html', konteks)
     return HttpResponse(template.render())
 
 def fh(request):
@@ -94,6 +114,16 @@ def fh(request):
         'dataMataKuliah': matakuliah,
         'dataProdi': prodi,
     }
+    if request.POST:
+        form = FormFh(request.POST)
+        if form ,is_valid():
+            form.save()
+            form = FormFh()
+
+            konteks = {
+                'form': form,
+            }
+            return render(request, 'fh.html', konteks)
     return HttpResponse(template.render())
 
 def fisip(request):
@@ -120,6 +150,16 @@ def fisip(request):
         'dataMataKuliah': matakuliah,
         'dataProdi': prodi,  
     }
+    if request.POST:
+        form = FormFisip(request.POST)
+        if form ,is_valid():
+            form.save()
+            form = FormFisip()
+
+            konteks = {
+                'form': form,
+            }
+            return render(request, 'fisip.html', konteks)
     return HttpResponse(template.render())
 
 def fk(request):
@@ -146,6 +186,16 @@ def fk(request):
         'dataMataKuliah': matakuliah,
         'dataProdi': prodi,  
     }
+    if request.POST:
+        form = FormFk(request.POST)
+        if form ,is_valid():
+            form.save()
+            form = FormFk()
+
+            konteks = {
+                'form': form,
+            }
+            return render(request, 'fk.html', konteks)
     return HttpResponse(template.render())
 
 def fkip(request):
@@ -172,6 +222,16 @@ def fkip(request):
         'dataMataKuliah': matakuliah,
         'dataProdi': prodi,
     }
+    if request.POST:
+        form = FormFkip(request.POST)
+        if form ,is_valid():
+            form.save()
+            form = FormFkip()
+
+            konteks = {
+                'form': form,
+            }
+            return render(request, 'fkip.html', konteks)
     return HttpResponse(template.render(context))
 
 def ft(request):
@@ -199,6 +259,16 @@ def ft(request):
         'dataProdi': prodi,
          
     }
+    if request.POST:
+        form = FormFt(request.POST)
+        if form ,is_valid():
+            form.save()
+            form = FormFt()
+
+            konteks = {
+                'form': form,
+            }
+            return render(request, 'ft.html', konteks)
     return HttpResponse(template.render())
 
 def pascasarjana(request):
@@ -226,6 +296,16 @@ def pascasarjana(request):
         'dataProdi': prodi,
          
     }
+    if request.POST:
+        form = FormPascasarjana(request.POST)
+        if form ,is_valid():
+            form.save()
+            form = FormPascasarjana()
+
+            konteks = {
+                'form': form,
+            }
+            return render(request, 'pascasarjana.html', konteks)
     return HttpResponse(template.render())
 
 def visidanmisi(request):
